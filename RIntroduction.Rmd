@@ -1,0 +1,77 @@
+---
+title: 'R数据科学教程'
+author: "Fattroy胖春"
+date: "2022年1月"
+output: 
+  ioslides_presentation:
+    logo: theme/Fattroy.png
+    css: theme/mycss.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+# R语言介绍
+
+## 【一】什么是R语言
+
+* R语言是继承自S语言的一种实现，而S语言是由AT&T贝尔实验室开发的一种用来进行数据探索、统计分析、作图的解释型语言。因此，R语言继承了S语言在统计计算、数据分析和绘图等方面的优势，成为一门在统计领域尤其热门的编程语言。
+* R语言是一个基于GNU框架的“Free Language”，它高度自由、完全免费，并且充分开源，你几乎可以不需要任何成本的使用R语言并且融入其高度繁荣的用户社区。
+* R语言是一门跨平台的解释性语言，不需要编译成为可执行文件即可运行程序，你甚至可以在PlayStation上面运行R语言的程序（别问我是怎么知道的，我甚至连PlayStation都没有）。
+
+## 【二】为什么选择R语言
+
+* 相比较于其他统计软件（SAS，SPSS等）R首先是完全免费的，能够节省大量的用来订阅软件的成本（~~或者是用来寻找破解版软件的时间~~），更重要的是R是高度自由和可扩展的，你能够利用R来进行设计和开发，实现你所期待的功能，这也是R被称为一门编程语言而非一个统计软件的原因。
+* 相对于其他程序设计语言（C，Java等）R是简单而专业的，R拥有非常繁荣的社区，尤其是在统计和数据分析相关的领域，更多时候你在调用一个方法的时候并不需要考虑其和计算机是如何交互的（~~但这并不能成为你不愿意学统计学基础的理由~~），尤其是在分析和可视化方面，一行代码就能实现的报表和绘图节省了大量的时间。另一方面，R语言的上手也相对更加容易，因为在你了解基本的语法之后，它的程序结构往往相当直白。
+* 与Python相比，emmmmm……
+
+
+## 【三】R环境搭建
+
+### 1. R的下载与安装
+
+* **Windows系统**
+
+   * 访问 [CRAN](https://cran.r-project.org/)
+   * 点击 [Download R for Windows](https://cran.r-project.org/bin/windows/)
+   * 点击 [base](https://cran.r-project.org/bin/windows/base/)
+   * 点击 [Download R 4.1.2 for Windows](https://cran.r-project.org/bin/windows/base/R-4.1.2-win.exe) （如果有新的版本可能是不同的版本号）
+   * 打开下载好的.exe文件，按照指示进行安装即可
+
+
+---
+
+* **Mac系统**
+
+   * 访问 [CRAN](https://cran.r-project.org/)
+   * 点击 [Download R for macOS](https://cran.r-project.org/bin/macosx/)
+   * 如果采用英特尔架构（目前除了M1系列都是）点击 [R-4.1.2.pkg](https://cran.r-project.org/bin/macosx/base/R-4.1.2.pkg)；如果采用ARM架构（M1）点击 [R-4.1.2-arm64.pkg](https://cran.r-project.org/bin/macosx/big-sur-arm64/base/R-4.1.2-arm64.pkg)
+   * 直接点击下载完成的.pkg文件按照指示进行安装即可
+
+* **Linux系统**
+
+   * 访问 [CRAN](https://cran.r-project.org/)
+   * 点击 [Download R for Linux](https://cran.r-project.org/bin/linux/)
+   * 找到自己对应的系统按照相应的介绍进行安装）
+
+
+
+---
+
+### 2. RStudio的下载与安装
+
+   RStudio是为了R语言编程而开发的一个IDE，让我们在使用R语言进行编程和分析时更加快捷和明了。
+
+   * 访问 [RStudio下载页面](https://www.rstudio.com/products/rstudio/download/) 
+   * 下载提示的版本或者找到与自己所使用操作系统相匹配的版本进行下载
+   * 打开安装文件并像安装其他软件一样按照指示进行安装
+
+   **注意：RStudio并不内置R语言，所以即使你已经下载安装了RStudio，也需要安装R语言**
+
+### 3. 直接启动RStudio进入R工作环境
+
+
+
+
