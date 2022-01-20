@@ -9,6 +9,7 @@
   height: 270px !important;
 }
 
+
 slides > slide:not(.nobackground):before {
   width: 100px;
   height: 100px;
