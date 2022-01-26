@@ -9,7 +9,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE, message = TRUE)
 ```
 
 
@@ -34,10 +34,12 @@ knitr::opts_chunk$set(echo = FALSE)
 
 * **Windows系统**
 
-   * 访问 [CRAN](https://cran.r-project.org/)
-   * 点击 [Download R for Windows](https://cran.r-project.org/bin/windows/)
-   * 点击 [base](https://cran.r-project.org/bin/windows/base/)
-   * 点击 [Download R 4.1.2 for Windows](https://cran.r-project.org/bin/windows/base/R-4.1.2-win.exe) （如果有新的版本可能是不同的版本号）
+   * 访问 R语言官方网站 https://www.r-project.org/
+   * 在左侧的Downloads标签中点击 [CRAN](https://cran.r-project.org/mirrors.html)
+   * 在镜像列表向下拉找到China，选择任意镜像（推荐[清华源](https://mirrors.tuna.tsinghua.edu.cn/CRAN/)）
+   * 点击 [Download R for Windows](https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/windows/)
+   * 点击 [base](https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/windows/base/)
+   * 点击 [Download R 4.1.2 for Windows](https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/windows/base/R-4.1.2-win.exe) （如果有新的版本可能是不同的版本号）
    * 打开下载好的.exe文件，按照指示进行安装即可
 
 
@@ -45,17 +47,28 @@ knitr::opts_chunk$set(echo = FALSE)
 
 * **Mac系统**
 
-   * 访问 [CRAN](https://cran.r-project.org/)
-   * 点击 [Download R for macOS](https://cran.r-project.org/bin/macosx/)
-   * 如果采用英特尔架构（目前除了M1系列都是）点击 [R-4.1.2.pkg](https://cran.r-project.org/bin/macosx/base/R-4.1.2.pkg)；如果采用ARM架构（M1）点击 [R-4.1.2-arm64.pkg](https://cran.r-project.org/bin/macosx/big-sur-arm64/base/R-4.1.2-arm64.pkg)
+   * 访问 R语言官方网站 https://www.r-project.org/
+   * 在左侧的Downloads标签中点击 [CRAN](https://cran.r-project.org/mirrors.html)
+   * 在镜像列表向下拉找到China，选择任意镜像（推荐[清华源](https://mirrors.tuna.tsinghua.edu.cn/CRAN/)）
+   * 点击 [Download R for macOS](https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/macosx/)
+   * 如果采用英特尔架构，点击 [R-4.1.2.pkg](https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/macosx/base/R-4.1.2.pkg)；如果采用ARM架构（M1）点击 [R-4.1.2-arm64.pkg](https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/macosx/big-sur-arm64/base/R-4.1.2-arm64.pkg)
    * 直接点击下载完成的.pkg文件按照指示进行安装即可
+   
+   
+---
 
 * **Linux系统**
 
    * 访问 [CRAN](https://cran.r-project.org/)
    * 点击 [Download R for Linux](https://cran.r-project.org/bin/linux/)
-   * 找到自己对应的系统按照相应的介绍进行安装）
-
+   * 找到自己对应的系统按照相应的介绍进行安装 
+* 或者
+   * 目前主流的Linux发布都有安装R语言的包，可以利用对应的包管理指令进行快捷安装
+   
+      ```
+      $ sudo apt-get install r-base # for Ubuntu or Debian
+      $ sudo yum install R.i386     # for Red Hat or Fedora
+      ```
 
 
 ---
@@ -74,7 +87,22 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
-## {data-background=rstudio-ide-zh.png}
+## &#0020; {data-background=rstudio-ide-zh.png}
 
+
+
+## Hello World R!
+
+```{r}
+r <- "R"
+message("Hello World ", r, "!")
+
+```
+
+```{r}
+a <- 2
+b <- 3
+message("a + b = ", a + b)
+```
 
 
