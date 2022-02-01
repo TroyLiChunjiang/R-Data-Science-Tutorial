@@ -94,15 +94,13 @@ knitr::opts_chunk$set(echo = TRUE, message = TRUE)
 ## Hello World R!
 
 ```{r}
-r <- "R"
-message("Hello World ", r, "!")
-
-```
-
-```{r}
 a <- 2
 b <- 3
-message("a + b = ", a + b)
+print(a + b)
 ```
 
 
+```{r}
+r <- "R"
+cat("Hello World", r, "!")
+```
