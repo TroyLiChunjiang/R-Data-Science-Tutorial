@@ -9,9 +9,3 @@
   height: 270px !important;
 }
 
-
-slides > slide:not(.nobackground):before {
-  width: 80px !important;
-  height: 80px !important;
-  background-size: 80px 80px !important;
-}
